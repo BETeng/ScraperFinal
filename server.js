@@ -24,6 +24,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/dataScraper"
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 
+
 require("./controllers/htmlController")(app);
 
 app.listen(PORT, function () {
